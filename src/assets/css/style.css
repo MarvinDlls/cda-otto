@@ -5,11 +5,19 @@
 /* Custom CSS */
 
 body {
-    @apply bg-slate-50;
+    @apply bg-slate-50 text-xl;
     font-family: "Lato", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    @apply text-3xl;
     font-family: "Sofia Sans Extra Condensed", serif;
     font-weight: 700;
+}
+
+.bg-cover {
+    background-image: url('/src/assets/images/cover.jpeg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
