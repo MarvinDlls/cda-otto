@@ -1,6 +1,6 @@
 <div class="lg:flex lg:items-center lg:justify-between border-b border-gray-200 p-4">
     <div class="min-w-0 flex-1">
-        <h2 class="text-2xl/7 font-bold text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
+        <h2 class="text-4xl/7 font-bold text-gray-900 sm:truncate sm:text-4xl sm:tracking-tight">
             <a href="/">CDA OTTO</a>
         </h2>
     </div>
