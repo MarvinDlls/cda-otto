@@ -5,7 +5,7 @@
             <h1 class="text-5xl sm:text-7xl text-center text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-amber-600">
                 Roulez sans limite, <br> réservez en un clic
             </h1>
-            <form action="" method="post" class="bg-white p-3 flex flex-col gap-4 rounded-md shadow-md m-4 max-w-[30rem]">
+            <form action="./src/utils/process.php" method="post" class="bg-white p-3 flex flex-col gap-4 rounded-md shadow-md m-4 max-w-[30rem]">
                 <div class="">
                     <h4 class="text-lg text-center">Sélectionnez le type de véhicule</h4>
                     <div class="flex flex-wrap gap-2">
@@ -37,25 +37,25 @@
                 </div>
                 <div class="flex gap-2 align-items-center justify-center w-full">
                     <div class="flex flex-col">
-                        <label class="text-sm text-slate-500 text-center" for="debut">À partir du</label>
+                        <label class="text-xs pb-1 text-slate-500 text-center" for="debut">À partir du</label>
                         <input type="datetime-local" name="debut" id="debut" required class="focus:outline-none border-none rounded-sm p-1 text-base">
                     </div>
                     <div class="flex flex-col">
-                        <label class="text-sm text-slate-500 text-center" for="fin">Jusqu'au</label>
+                        <label class="text-xs pb-1 text-slate-500 text-center" for="fin">Jusqu'au</label>
                         <input type="datetime-local" name="fin" id="fin" required class="focus:outline-none border-none rounded-sm p-1 text-base">    
                     </div>
                 </div>
                 <div class="flex flex-col">
-                    <label class="text-sm text-slate-500" for="identite">Nom Prénom</label>
+                    <label class="text-xs text-center pb-1 text-slate-500" for="identite">Nom Prénom</label>
                     <input type="text" name="identite" id="identite" required class="bg-slate-100 focus:bg-slate-50 focus:outline-none border rounded-sm p-1 text-base">
                 </div>
                 <div class="flex gap-2">
                     <div class="flex flex-col">
-                        <label class="text-sm text-slate-500" for="email">Adresse e-mail</label>
+                        <label class="text-xs text-center pb-1 text-slate-500" for="email">Adresse e-mail</label>
                         <input type="email" name="email" id="email" required class="bg-slate-100 focus:bg-slate-50 focus:outline-none border rounded-sm p-1 text-base">
                     </div>
                     <div class="flex flex-col">
-                        <label class="text-sm text-slate-500" for="telephone">Téléphone</label>
+                        <label class="text-xs text-center pb-1 text-slate-500" for="telephone">Téléphone</label>
                         <input type="tel" name="telephone" id="telephone" required class="bg-slate-100 focus:bg-slate-50 focus:outline-none border rounded-sm p-1 text-base">
                     </div>
                 </div>
