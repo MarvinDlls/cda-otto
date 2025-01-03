@@ -63,7 +63,7 @@
                     Envoyez-nous un message
                 </h2>
 
-                <form action="./src/utils/contact-process.php" method="POST" class="space-y-4">
+                <form action="./src/utils/contactProcess.php" method="POST" class="space-y-4">
                     <div class="grid grid-cols-2 gap-4">
                         <div>
                             <label for="nom" class="block text-sm font-medium text-gray-700 mb-1">Nom</label>
@@ -99,6 +99,11 @@
                         <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
                         <textarea id="message" name="message" rows="4" required
                             class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+                    </div>
+
+                    <div class="">
+                        <input type="checkbox" name="rgpd" id="rgpd">
+                        <label for="rgpd" class="text-sm">J'accepte la <a href="#">politique de traitement des données personnelles</a> de CDA</label>
                     </div>
 
                     <button type="submit"
