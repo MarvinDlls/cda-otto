@@ -1,11 +1,19 @@
+// Mobile menu toggle
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+
 // Minimum 2 caractères pour le nom et prénom
-let identite = document.getElementById('identite');
-identite.addEventListener('input', function() {
-    if (identite.value.length < 2) {
-        identite.classList.add('alert');
-    } else {
-        identite.classList.remove('alert');
-    }
+let identite = document.getElementById("identite");
+identite.addEventListener("input", function () {
+  if (identite.value.length < 2) {
+    identite.classList.add("alert");
+  } else {
+    identite.classList.remove("alert");
+  }
 });
 
 // Téléphone FR valide
