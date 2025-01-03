@@ -8,33 +8,34 @@
             <form action="./src/utils/process.php" method="post" class="bg-white p-3 flex flex-col gap-4 rounded-md shadow-md m-4 max-w-[30rem]">
                 <div class="">
                     <h4 class="text-lg text-center">Sélectionnez le type de véhicule</h4>
-                    <div class="flex flex-wrap gap-2">
+                    <fieldset class="flex flex-wrap gap-2">
                         <label for="sans-permis" class="flex flex-col justify-center gap-2">
                             <img src="./src/assets/images/sans-permis.png" alt="sans-permis" class="w-16 z-20">
-                            <input type="checkbox" name="sans-permis" id="sans-permis" class="text-center rounded-full">
-                        </label>    
+                            <input type="radio" name="vehicle_type" id="sans-permis" value="sans-permis" class="text-center rounded-full" required>
+                        </label>
                         <label for="citadine" class="flex flex-col justify-center gap-2">
                             <img src="./src/assets/images/citadine.png" alt="citadine" class="w-16 z-20">
-                            <input type="checkbox" name="citadine" id="citadine" class="text-center rounded-full">
+                            <input type="radio" name="vehicle_type" id="citadine" value="citadine" class="text-center rounded-full">
                         </label>
                         <label for="berline" class="flex flex-col justify-center gap-2">
                             <img src="./src/assets/images/berline.png" alt="berline" class="w-16 z-20">
-                            <input type="checkbox" name="berline" id="berline" class="text-center rounded-full">
+                            <input type="radio" name="vehicle_type" id="berline" value="berline" class="text-center rounded-full">
                         </label>
                         <label for="suv" class="flex flex-col justify-center gap-2">
                             <img src="./src/assets/images/suv.png" alt="suv" class="w-16 z-20">
-                            <input type="checkbox" name="suv" id="suv" class="text-center rounded-full">
+                            <input type="radio" name="vehicle_type" id="suv" value="suv" class="text-center rounded-full">
                         </label>
                         <label for="sportive" class="flex flex-col justify-center gap-2">
                             <img src="./src/assets/images/sportive.png" alt="sportive" class="w-16 z-20">
-                            <input type="checkbox" name="sportive" id="sportive" class="text-center rounded-full">
+                            <input type="radio" name="vehicle_type" id="sportive" value="sportive" class="text-center rounded-full">
                         </label>
                         <label for="camion" class="flex flex-col justify-center gap-2">
                             <img src="./src/assets/images/camion.png" alt="camion" class="w-16 z-20">
-                            <input type="checkbox" name="camion" id="camion" class="text-center rounded-full">
+                            <input type="radio" name="vehicle_type" id="camion" value="camion" class="text-center rounded-full">
                         </label>
-                    </div>
+                    </fieldset>
                 </div>
+                <hr>
                 <div class="flex gap-2 align-items-center justify-center w-full">
                     <div class="flex flex-col">
                         <label class="text-xs pb-1 text-slate-500 text-center" for="debut">À partir du</label>
@@ -42,7 +43,7 @@
                     </div>
                     <div class="flex flex-col">
                         <label class="text-xs pb-1 text-slate-500 text-center" for="fin">Jusqu'au</label>
-                        <input type="datetime-local" name="fin" id="fin" required class="focus:outline-none border-none rounded-sm p-1 text-base">    
+                        <input type="datetime-local" name="fin" id="fin" required class="focus:outline-none border-none rounded-sm p-1 text-base">
                     </div>
                 </div>
                 <div class="flex flex-col">
@@ -66,9 +67,3 @@
         </div>
     </header>
 </main>
-
-
-
-
-
-
