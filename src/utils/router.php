@@ -6,7 +6,7 @@ $path = parse_url($url, PHP_URL_PATH); // Chemin de l'URL
 $path = rtrim($path, '/'); // Supprimer le slash de la fin
 
 // Si le chemin est vide, rediriger vers l'index
-if ($path === '') {
+if ($path === '' || $path === '/index.php') {
     $path = '/home';
 }
 
